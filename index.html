@@ -1,204 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Replay Ventures</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Replay Ventures - China to India trade, sourcing and logistics solutions." />
+  <title>Replay Ventures | China to India Logistics</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-<style>
-body {font-family: 'Segoe UI', sans-serif; margin:0;}
-
-.navbar {
-  background:white;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
-
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-  url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');
-  background-size: cover;
-  color:white;
-  padding:120px 20px;
-  text-align:center;
-}
-
-.btn-main {
-  background:#0d6efd;
-  color:white;
-  padding:10px 20px;
-  border:none;
-}
-
-.section {padding:70px 20px;}
-
-.card-box {
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.05);
-  transition:0.3s;
-}
-.card-box:hover {transform:translateY(-5px);}
-
-.icon i {
-  font-size:30px;
-  color:#0d6efd;
-  margin-bottom:10px;
-}
-
-.product img {
-  border-radius:10px;
-}
-
-.footer {
-  background:#0d1b2a;
-  color:white;
-  padding:40px;
-}
-
-.process-step {
-  font-size:18px;
-  margin:10px 0;
-}
-</style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-mark">R</span>
+        <span>
+          <strong>REPLAY</strong>
+          <small>VENTURES</small>
+        </span>
+      </a>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <h4><b>Replay Ventures</b></h4>
-    <a href="#" class="btn btn-main">Get a Quote</a>
-  </div>
-</nav>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>YOUR COMPLETE TRADE & LOGISTICS PARTNER</h1>
-  <p>China to India Shipping | End to End Supply Chain</p>
-  <a class="btn btn-main m-2">Get Quote</a>
-  <a href="https://wa.me/919619859427" class="btn btn-success m-2">WhatsApp Us</a>
-</section>
+      <nav class="main-nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#china">China Operations</a>
+        <a href="#products">Products</a>
+        <a href="#track">Track Shipment</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
 
-<!-- SERVICES -->
-<section class="section text-center">
-  <h2>Our Services</h2>
-  <div class="row mt-5">
+      <a class="btn btn-primary nav-cta" href="#quote">
+        <i class="fa-regular fa-file-lines"></i> Get a Quote
+      </a>
+    </div>
+  </header>
 
-    <div class="col-md-3">
-      <div class="card-box icon">
-        <i class="fas fa-ship"></i>
-        <h5>Sea Freight</h5>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="route-line">CHINA 🇨🇳 <span>TO</span> INDIA 🇮🇳</div>
+        <h1>Your Complete<br>Trade &amp; Logistics Partner</h1>
+        <p>From supplier to your doorstep, we manage everything so you can focus on growing your business.</p>
+
+        <div class="hero-benefits">
+          <div><i class="fa-solid fa-shield-halved"></i><span>Reliable<br>Network</span></div>
+          <div><i class="fa-solid fa-puzzle-piece"></i><span>End-to-End<br>Solutions</span></div>
+          <div><i class="fa-regular fa-clock"></i><span>On-time<br>Delivery</span></div>
+          <div><i class="fa-regular fa-file-lines"></i><span>Transparent<br>Process</span></div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#quote">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-dark" target="_blank" rel="noopener" href="https://wa.me/917437867869?text=Hello%20Replay%20Ventures%2C%20I%20want%20a%20logistics%20quote.">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading with-lines">
+          <span></span><h2>Two Companies. One Connected Supply Chain.</h2><span></span>
+        </div>
+
+        <div class="supply-grid">
+          <article class="operation-card china-card" id="china">
+            <div class="operation-head">
+              <div class="mini-logo dark">F</div>
+              <div><h3>Fubusi Exports Limited</h3><p>China Operations</p></div>
+            </div>
+            <ul class="check-list red">
+              <li>Supplier Coordination</li>
+              <li>Cargo Collection</li>
+              <li>Warehousing &amp; Consolidation</li>
+              <li>Packing &amp; Loading</li>
+              <li>Export Documentation</li>
+            </ul>
+            <div class="location"><i class="fa-solid fa-location-dot"></i> Guangzhou, China</div>
+          </article>
+
+          <div class="ship-bridge">
+            <div class="dashed-line left"></div>
+            <div class="ship-circle"><i class="fa-solid fa-ship"></i></div>
+            <div class="dashed-line right"></div>
+            <h3>International Shipping</h3>
+            <p>Sea Freight | Air Freight</p>
+          </div>
+
+          <article class="operation-card india-card">
+            <div class="operation-head">
+              <div class="mini-logo blue">R</div>
+              <div><h3>Replay Ventures</h3><p>India Operations</p></div>
+            </div>
+            <ul class="check-list blue">
+              <li>Import &amp; Customs Support</li>
+              <li>Warehousing in India</li>
+              <li>Local Transportation</li>
+              <li>Door to Door Delivery</li>
+              <li>Customer Support</li>
+            </ul>
+            <div class="location"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" id="services">
+      <div class="container">
+        <div class="section-heading with-lines">
+          <span></span><h2>Our Services</h2><span></span>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><i class="fa-solid fa-ship"></i><h3>Sea Freight<br>FCL &amp; LCL</h3></article>
+          <article class="service-card"><i class="fa-solid fa-plane"></i><h3>Air Cargo</h3></article>
+          <article class="service-card"><i class="fa-solid fa-truck"></i><h3>Door to Door<br>Delivery</h3></article>
+          <article class="service-card"><i class="fa-solid fa-warehouse"></i><h3>Warehousing<br>Solutions</h3></article>
+          <article class="service-card"><i class="fa-solid fa-clipboard-check"></i><h3>Import &amp; Customs<br>Support</h3></article>
+          <article class="service-card"><i class="fa-solid fa-box-open"></i><h3>Product Sourcing<br>From China</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" id="products">
+      <div class="container">
+        <div class="section-heading with-lines">
+          <span></span><h2>Products We Handle</h2><span></span>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card"><div class="product-visual bag"><i class="fa-solid fa-bag-shopping"></i></div><h3>Bags</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-shoe-prints"></i></div><h3>Footwear</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-couch"></i></div><h3>Furniture</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-paw"></i></div><h3>Toys</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-mobile-screen-button"></i></div><h3>Electronics</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-blender"></i></div><h3>Home Appliances</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-utensils"></i></div><h3>Cutlery Items</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-recycle"></i></div><h3>Scrap Items</h3></article>
+          <article class="product-card"><div class="product-visual"><i class="fa-solid fa-dumbbell"></i></div><h3>Play &amp; Gym Equipment</h3></article>
+        </div>
+        <div class="center"><a class="btn btn-darkblue" href="#contact">View All Products <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container triple-grid">
+        <article class="process-card">
+          <div class="section-heading small with-lines"><span></span><h2>How It Works</h2><span></span></div>
+          <div class="process-row">
+            <div class="process-step"><i class="fa-regular fa-clipboard"></i><b>1</b><span>Send Your<br>Enquiry</span></div>
+            <i class="fa-solid fa-arrow-right connector"></i>
+            <div class="process-step"><i class="fa-solid fa-box-open"></i><b>2</b><span>We Source &amp;<br>Collect</span></div>
+            <i class="fa-solid fa-arrow-right connector"></i>
+            <div class="process-step"><i class="fa-solid fa-warehouse"></i><b>3</b><span>Warehouse &amp;<br>Consolidate</span></div>
+            <i class="fa-solid fa-arrow-right connector"></i>
+            <div class="process-step"><i class="fa-solid fa-truck"></i><b>4</b><span>Ship to<br>India</span></div>
+            <i class="fa-solid fa-arrow-right connector"></i>
+            <div class="process-step"><i class="fa-solid fa-bag-shopping"></i><b>5</b><span>Customs Clearance<br>&amp; Delivery</span></div>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <h2>Why Choose Us</h2>
+          <ul>
+            <li>Strong presence in China &amp; India</li>
+            <li>End-to-end supply chain management</li>
+            <li>Competitive rates with best service</li>
+            <li>Experienced &amp; reliable team</li>
+            <li>Transparent communication</li>
+            <li>On-time delivery commitment</li>
+          </ul>
+        </article>
+
+        <article class="track-card" id="track">
+          <div class="track-inner">
+            <h2>Track Your Shipment</h2>
+            <p>Enter your tracking number to get real-time updates</p>
+            <form id="trackingForm">
+              <input id="trackingNumber" type="text" placeholder="Enter Tracking Number" required>
+              <button class="btn btn-primary" type="submit">Track Now <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <small id="trackMessage"></small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-strip" id="quote">
+      <div class="container cta-wrap">
+        <div class="cta-copy">
+          <div class="support-icon"><i class="fa-solid fa-headset"></i></div>
+          <div><h2>Ready to Move Your Business Forward?</h2><p>Let's build a strong and successful partnership.</p></div>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:info@replayventures.com?subject=Logistics%20Quote%20Request">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-outline-light" target="_blank" rel="noopener" href="https://wa.me/917437867869?text=Hello%20Replay%20Ventures%2C%20I%20want%20a%20logistics%20quote."><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand footer-brand">
+          <span class="brand-mark">R</span>
+          <span><strong>REPLAY</strong><small>VENTURES</small></span>
+        </a>
+        <p>Replay Ventures (India) and Fubusi Exports Limited (China) work together to provide seamless trade and logistics solutions between China and India.</p>
+      </div>
+
+      <div>
+        <h3>Fubusi Exports Limited</h3>
+        <small>(China Operations)</small>
+        <p><i class="fa-solid fa-location-dot"></i> Guangzhou, China</p>
+        <p><i class="fa-solid fa-phone"></i> +86 13650890259</p>
+        <p><i class="fa-regular fa-envelope"></i> fubusiexports@163.com</p>
+      </div>
+
+      <div>
+        <h3>Replay Ventures</h3>
+        <small>(India Operations)</small>
+        <p><i class="fa-solid fa-phone"></i> +91 74378 67869</p>
+        <p><i class="fa-regular fa-envelope"></i> info@replayventures.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Mumbai, India</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <div class="quick-links">
+          <a href="#home">Home</a><a href="#products">Products</a>
+          <a href="#about">About Us</a><a href="#track">Track Shipment</a>
+          <a href="#services">Services</a><a href="#contact">Contact Us</a>
+          <a href="#china">China Operations</a><a href="#quote">Get a Quote</a>
+        </div>
       </div>
     </div>
 
-    <div class="col-md-3">
-      <div class="card-box icon">
-        <i class="fas fa-plane"></i>
-        <h5>Air Cargo</h5>
+    <div class="container footer-bottom">
+      <span>© 2026 Replay Ventures. All Rights Reserved.</span>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://wa.me/917437867869" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
+  </footer>
 
-    <div class="col-md-3">
-      <div class="card-box icon">
-        <i class="fas fa-truck"></i>
-        <h5>Door Delivery</h5>
-      </div>
-    </div>
+  <a class="floating-whatsapp" target="_blank" rel="noopener" href="https://wa.me/917437867869?text=Hello%20Replay%20Ventures%2C%20I%20have%20a%20shipping%20enquiry." aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-    <div class="col-md-3">
-      <div class="card-box icon">
-        <i class="fas fa-warehouse"></i>
-        <h5>Warehousing</h5>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="section bg-light text-center">
-  <h2>Products We Handle</h2>
-  <div class="row mt-4">
-
-    <div class="col-md-2 product">
-      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" class="img-fluid">
-      <p>Bags</p>
-    </div>
-
-    <div class="col-md-2 product">
-      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796" class="img-fluid">
-      <p>Electronics</p>
-    </div>
-
-    <div class="col-md-2 product">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" class="img-fluid">
-      <p>Furniture</p>
-    </div>
-
-    <div class="col-md-2 product">
-      <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30" class="img-fluid">
-      <p>Toys</p>
-    </div>
-
-    <div class="col-md-2 product">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155228d1a9" class="img-fluid">
-      <p>Machinery</p>
-    </div>
-
-    <div class="col-md-2 product">
-      <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505" class="img-fluid">
-      <p>Equipment</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section text-center">
-  <h2>How It Works</h2>
-  <div class="process-step">1️⃣ Enquiry</div>
-  <div class="process-step">2️⃣ Sourcing</div>
-  <div class="process-step">3️⃣ Warehouse</div>
-  <div class="process-step">4️⃣ Shipping</div>
-  <div class="process-step">5️⃣ Delivery</div>
-</section>
-
-<!-- WHY -->
-<section class="section bg-light text-center">
-  <h2>Why Choose Us</h2>
-  <p>✔ China & India Presence</p>
-  <p>✔ End-to-End Logistics</p>
-  <p>✔ Competitive Pricing</p>
-  <p>✔ On-Time Delivery</p>
-</section>
-
-<!-- TRACK -->
-<section class="section text-center">
-  <h2>Track Your Shipment</h2>
-  <input type="text" placeholder="Enter Tracking Number" class="form-control w-50 mx-auto">
-  <br>
-  <button class="btn btn-main">Track Now</button>
-</section>
-
-<!-- CONTACT -->
-<section class="section text-center">
-  <h2>Contact Us</h2>
-  <p>📞 +91 9619859427</p>
-  <a href="https://wa.me/919619859427" class="btn btn-success">WhatsApp Now</a>
-</section>
-
-<!-- FOOTER -->
-<div class="footer text-center">
-  <h5>Replay Ventures</h5>
-  <p>China to India Logistics Solutions</p>
-  © 2025 All Rights Reserved
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
