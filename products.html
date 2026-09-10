@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products We Handle | Replay Ventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">R</span><span><strong>REPLAY</strong><small>VENTURES</small></span></a>
+    <a class="btn btn-darkblue" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+  </div>
+</header>
+
+<section class="products-hero">
+  <div class="container">
+    <span class="eyebrow">Import • Sourcing • Freight</span>
+    <h1>Products We Handle</h1>
+    <p>We support a broad range of commercial cargo from China to India, including sourcing, consolidation, freight, customs and last-mile delivery.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container products-page-grid">
+    <article class="large-product"><img src="assets/bags.jpg" alt="Bags"><div><h2>Bags</h2><p>Handbags, travel bags, backpacks and related accessories.</p><button class="btn btn-primary quote-trigger" data-product="Bags">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/footwear.jpg" alt="Footwear"><div><h2>Footwear</h2><p>Shoes, sandals, fashion footwear and wholesale consignments.</p><button class="btn btn-primary quote-trigger" data-product="Footwear">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/furniture.jpg" alt="Furniture"><div><h2>Furniture</h2><p>Home, office and commercial furniture cargo.</p><button class="btn btn-primary quote-trigger" data-product="Furniture">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/toys.jpg" alt="Toys"><div><h2>Toys</h2><p>Toys, gifts and child-focused product consignments.</p><button class="btn btn-primary quote-trigger" data-product="Toys">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/electronics.jpg" alt="Electronics"><div><h2>Electronics</h2><p>Consumer electronics, devices and accessories.</p><button class="btn btn-primary quote-trigger" data-product="Electronics">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/home-appliances.jpg" alt="Home appliances"><div><h2>Home Appliances</h2><p>Small and large appliances for retail and distribution.</p><button class="btn btn-primary quote-trigger" data-product="Home Appliances">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/cutlery.jpg" alt="Cutlery"><div><h2>Cutlery Items</h2><p>Kitchenware, tableware and hospitality supplies.</p><button class="btn btn-primary quote-trigger" data-product="Cutlery Items">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/scrap.jpg" alt="Scrap"><div><h2>Scrap Items</h2><p>Eligible scrap cargo subject to documentation and regulations.</p><button class="btn btn-primary quote-trigger" data-product="Scrap Items">Get Quote</button></div></article>
+    <article class="large-product"><img src="assets/gym-equipment.jpg" alt="Gym equipment"><div><h2>Play &amp; Gym Equipment</h2><p>Fitness, sports and recreation equipment.</p><button class="btn btn-primary quote-trigger" data-product="Play & Gym Equipment">Get Quote</button></div></article>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container cta-wrap">
+    <div><h2>Have a different product?</h2><p>Send the product details and we’ll confirm the suitable logistics route.</p></div>
+    <button class="btn btn-primary quote-trigger">Request a Custom Quote</button>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-bottom"><span>© 2026 Replay Ventures. All Rights Reserved.</span><a href="index.html">Home</a></div>
+</footer>
+
+<div class="modal" id="quoteModal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+    <button class="modal-close" id="quoteClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-head"><span class="eyebrow">China ↔ India Logistics</span><h2 id="quoteTitle">Request a Logistics Quote</h2><p>Tell us what you need to move and where it needs to go.</p></div>
+    <form class="quote-form" id="quoteForm">
+      <div class="form-grid">
+        <label>Full Name<input type="text" name="name" required></label>
+        <label>Company / Business<input type="text" name="company"></label>
+        <label>Phone / WhatsApp<input type="tel" name="phone" required></label>
+        <label>Email<input type="email" name="email"></label>
+        <label>Service Required<select name="service" required><option value="">Select service</option><option>Sea Freight (FCL/LCL)</option><option>Air Cargo</option><option>Door to Door Delivery</option><option>Warehousing & Consolidation</option><option>Import & Customs Support</option><option>Product Sourcing from China</option></select></label>
+        <label>Product / Cargo Type<input id="quoteProduct" type="text" name="product" required></label>
+        <label>Origin<input type="text" name="origin"></label>
+        <label>Destination<input type="text" name="destination"></label>
+        <label>Approx. Weight<input type="text" name="weight"></label>
+        <label>Approx. Volume / Quantity<input type="text" name="volume"></label>
+      </div>
+      <label>Additional Details<textarea name="message" rows="4"></textarea></label>
+      <div class="quote-actions"><button class="btn btn-primary" type="submit"><i class="fa-brands fa-whatsapp"></i> Send Quote Request on WhatsApp</button></div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
