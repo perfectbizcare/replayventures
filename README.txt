@@ -1,25 +1,52 @@
-Replay Ventures Website V2
+Replay Ventures Website V3 - ROOT IMAGE STRUCTURE
 
-UPLOAD ALL THESE TO THE ROOT OF YOUR GitHub repo:
+WHY YOUR IMAGES WERE BROKEN
+Your GitHub repo had image files in the repository root:
+  bags.jpg
+  footwear.jpg
+  international-shipping.jpg
+  etc.
+
+But the HTML was asking the browser to load:
+  assets/bags.jpg
+  assets/footwear.jpg
+  assets/international-shipping.jpg
+
+Since there was no assets/ folder on GitHub, GitHub Pages correctly returned missing images.
+This V3 fixes the paths to match your CURRENT GitHub repository structure.
+
+UPLOAD/REPLACE THESE FILES IN THE ROOT OF YOUR replayventures REPO:
 - index.html
 - products.html
 - styles.css
 - script.js
-- assets/ folder (ALL images inside it)
+- bags.jpg
+- footwear.jpg
+- furniture.jpg
+- toys.jpg
+- electronics.jpg
+- home-appliances.jpg
+- cutlery.jpg
+- scrap.jpg
+- gym-equipment.jpg
+- international-shipping.jpg
 
-Important:
-1. Do not upload only index.html. The photos are local files and require the assets folder.
-2. Keep the exact file names unchanged.
-3. GitHub Pages should remain main branch + /(root).
-4. After commit, wait about 30-90 seconds and press Ctrl+Shift+R on the live website.
+Optional:
+- reference-design.jpeg
+- README.txt
 
-What is now working:
-- View All Products -> opens products.html
-- Product cards use local product photos
-- International shipping circle uses a ship photo
-- All Get a Quote buttons open a logistics quote form
-- Quote form sends all entered details to Replay Ventures WhatsApp
-- Mobile navigation
-- Tracking UI demo
+Do NOT put the image files inside an assets folder unless you also change the HTML paths again.
 
-Real live shipment tracking still requires the client's shipment/courier/ERP API.
+WHAT IS WORKING
+- Home page product images use local JPG files
+- International shipping circle uses international-shipping.jpg
+- View All Products opens products.html
+- Products page shows all listed products
+- Product Get Quote buttons open the quote modal
+- Header, hero and bottom Get a Quote buttons open the quote modal
+- Quote form formats the enquiry and opens WhatsApp
+- Mobile navigation works
+- Tracking box works as a demo UI
+
+IMPORTANT
+Real shipment tracking requires the client's courier/freight/ERP API.
